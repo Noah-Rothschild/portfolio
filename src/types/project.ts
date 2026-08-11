@@ -2,7 +2,8 @@ export interface Project {
     title: string;
     description: string;
     status: "live" | "in-progress";
-    image: string;
+    techStack: [];
+    image?: string;
     liveUrl?: string;
     githubUrl?: string;
 }
