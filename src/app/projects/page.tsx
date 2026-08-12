@@ -1,3 +1,8 @@
+
 export default function ProjectsPage() {
-  return <div>Projects page placeholder</div>;
+  return (
+    <div>
+      <div>Projects page placeholder</div>
+    </div>
+  );
 }
