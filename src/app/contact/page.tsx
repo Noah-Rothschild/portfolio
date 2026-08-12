@@ -1,3 +1,3 @@
-export default function ProjectsPage() {
-  return <div>Projects page placeholder</div>;
+export default function ContactPage() {
+  return <div>Contact page placeholder</div>;
 }

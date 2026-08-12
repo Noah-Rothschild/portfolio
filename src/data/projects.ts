@@ -5,6 +5,7 @@ const projects: Project[] = [
         title: "chefbook",
         description: "Webapp Project where a user adds ingredients to their personal pantry and is able to have recipes suggested to them based on the contents of their pantry.",
         status: "in-progress",
+        techStack: ["Django", "React", "PostGreSQL"],
         image: "",
         liveUrl: "",
         githubUrl: "https://github.com/Noah-Rothschild/chefbook",
@@ -15,8 +16,9 @@ const projects: Project[] = [
         title: "rising-tide",
         description: "C-2-C E-commerce website built using Javascript, PHP and MySQL that aims to connect South African vendors to customers in a secure marketplace environment.",
         status: "live",
+        techStack: ["PHP", "JavaScript", "MySQL"],
         image: "",
-        liveUrl: "rising-tide.freedev.app/",
+        liveUrl: "https://rising-tide.freedev.app/",
         githubUrl: "https://github.com/Noah-Rothschild/rising-tide",
         
     },
