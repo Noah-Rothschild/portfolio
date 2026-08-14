@@ -2,4 +2,10 @@
 
 @theme {
   --color-accent: #0D9488;
+  --font-comfortaa: var(--font-comfortaa);
+  --font-source-sans: var(--font-source-sans);
+}
+
+html {
+  scroll-behavior: smooth;
 }

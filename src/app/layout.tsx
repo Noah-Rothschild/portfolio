@@ -1,5 +1,9 @@
 import "./globals.css";
 import Nav from "../components/Nav";
+import { Comfortaa, Source_Sans_3 } from "next/font/google";
+
+const comfortaa = Comfortaa({ subsets: ["latin"], variable: "--font-comfortaa" });
+const sourceSans = Source_Sans_3({ subsets: ["latin"], variable: "--font-source-sans" });
 
 export default function RootLayout({
   children,
@@ -8,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="pt-20">
+      <body className={`${comfortaa.variable} ${sourceSans.variable} pt-20`}>
         <Nav />
         {children}
       </body>
