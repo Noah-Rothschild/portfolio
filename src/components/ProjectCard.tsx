@@ -7,8 +7,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, variant = "default" }: ProjectCardProps) {
     return (
-        <div className="border p-4 rounded shadow-md hover:shadow-lg transition-shadow duration-300 w-full max-w-sm bg-white text-gray-900">
-            <h3>{project.title}</h3>
+        <div className={`border p-4 rounded shadow-md hover:shadow-lg transition-shadow duration-300 w-full ${variant === "compact" ? "max-w-sm" : "max-w-2xl"} mx-auto bg-white text-gray-900 space-y-3`}>
+            <h3 className="text-xl font-bold">{project.title}</h3>
             {project.techStack && (
                 <div>
                     {project.techStack.map((tech) => (
@@ -18,15 +18,16 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
                     ))}
                 </div>
             )}
-            <p>Status: {project.status}</p>
-            {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-                Live Demo
-            </a>}
-            {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-                GitHub
-            </a>}
-            <img src={project.image} alt={project.title} />
-            {variant === "default" && <p>{project.description}</p>}
+            <p className="text-sm text-gray-500">Status: {project.status}</p>
+            <div className="flex gap-4">
+                {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                    Live Demo
+                </a>}
+                {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+                    GitHub
+                </a>}
+            </div>
+            {variant === "default" && <p className="text-sm text-gray-700">{project.description}</p>}
             
         </div>
     );
