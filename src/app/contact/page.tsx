@@ -13,7 +13,7 @@ export default function ContactPage() {
       <p><a href="mailto:nprothschild@gmail.com">nprothschild@gmail.com</a></p>
 
       <h2>Social Media</h2>
-      <p><a href="https://www.linkedin.com/in/noah-rothschild/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+      <p><a href="https://www.linkedin.com/in/noah-rothschild-095270202/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
       <p><a href="https://github.com/Noah-Rothschild" target="_blank" rel="noopener noreferrer">GitHub</a></p>
 
     </div>
