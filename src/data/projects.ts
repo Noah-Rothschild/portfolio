@@ -24,7 +24,7 @@ const projects: Project[] = [
     },
 
     {
-        title: "Portfolio Website",
+        title: "portfolio-website",
         description: "A responsive portfolio website showcasing my projects and skills.",
         slug: "portfolio-website",
         techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
@@ -35,9 +35,10 @@ const projects: Project[] = [
     },
 
     {
-        title: "tourism-safety app",
+        title: "tourism-safety-app",
         description: "Location-based system that provides crowd-sourced safety information about Cape Town aimed at increasing tourism safety within the city.",
         slug: "tourism-safety-app",
+        techStack: ["React Native", "Express", "Firebase"],
         status: "in-progress",
         liveUrl: "",
         githubUrl: "",
