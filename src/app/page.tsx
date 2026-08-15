@@ -67,11 +67,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="about">
-        <div>
-          <h2>About</h2>
-          <p>Hello, I'm Noah Rothschild! I'm a software engineer with a passion for building full-stack solutions. My current experience includes leveraging modern web technologies such as Django, Typescript, React and Next.js to create efficient and scalable web-solutions. I am always looking for new challenges and learning opportunities and am currently developing my cloud architecture knowledge.</p>
-          <a href="/noah_rothschild_cv.pdf" download>Download Resume</a>
+      <section id="about" className="scroll-mt-24 px-6 py-28">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+          <div>
+            <h2 className="font-comfortaa text-3xl font-semibold text-gray-900 mb-8">About</h2>
+            <p className="font-source-sans text-base text-gray-600 leading-relaxed max-w-md mb-6">
+              Hello, I'm Noah Rothschild! I'm a software engineer with a passion for building full-stack solutions. My current experience includes leveraging modern web technologies such as Django, Typescript, React and Next.js to create efficient and scalable web-solutions. I am always looking for new challenges and learning opportunities and am currently developing my cloud architecture knowledge.
+              </p>
+              <a href="/noah_rothschild_cv.pdf" download className="font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
+                Download Resume →
+              </a>
+            </div>
+
+          <div className="flex flex-col gap-10">
+            <div>
+              <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-600 block mb-4">TechStack</span>
+              <div className="flex flex-wrap gap-2">
+                {["Python", "JavaScript", "Java", "PHP", "TypeScript", "Django", "MySQL", "PostgreSQL", "CSS", "HTML", "AWS", "React"].map((tech) => (
+                  <span key={tech} className="text-xs uppercase tracking-wider px-2.5 py-1 border border-gray-200 text-gray-500 rounded-full">
+                    {tech}
+                    </span>
+              ))}
+              </div>
+            </div>
+
+            <div>
+              <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-600 block mb-4">Education</span>
+              <p className="font-source-sans font-semibold text-gray-900">Eduvos, Cape Town</p>
+              <p className="font-source-sans text-sm text-gray-600">BSc Information Technology: Software Engineering  2024–2026</p>
+              <p className="font-source-sans text-xs text-gray-400 mt-1">Expected November 2026</p>
+            </div>
+          </div>
         </div>
       </section>
 
