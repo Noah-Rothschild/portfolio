@@ -17,6 +17,7 @@ export default function Home() {
   }, []);
   
   return (
+
     <div>
       <section id="hero" className="min-h-screen flex flex-col items-center justify-center text-center gap-5 px-10">
           <h1 className="font-comfortaa text-[clamp(3rem,10vw,9rem)] font-light tracking-tight text-gray-900">Noah Rothschild</h1>

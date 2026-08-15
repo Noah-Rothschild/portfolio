@@ -1,3 +1,6 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Project } from "../types/project";
 import Link from "next/link";
 
@@ -7,10 +10,13 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, variant = "default" }: ProjectCardProps) {
+
+    const router = useRouter();
+
     return (
-        <Link
-        href={`/projects/${project.slug}`}
-        className="group flex flex-col gap-3 py-8 border-t border-gray-200 hover:bg-gray-50 transition-colors duration-300 -mx-4 px-7">
+        <div
+        onClick={() => router.push(`/projects/${project.slug}`)}
+        className="group flex flex-col gap-3 py-8 border-t border-gray-200 hover:bg-gray-50 transition-colors duration-300 -mx-4 px-7 cursor-pointer">
         <div className="flex items-baseline gap-3">
             <h3 className="font-comfortaa text-2xl font-semibold text-gray-900 group-hover:text-gray-700 transition-colors duration-200">
                 {project.title}
@@ -49,6 +55,6 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
             ))}
             </div>
         )}
-        </Link>
+        </div>
   );
 }
