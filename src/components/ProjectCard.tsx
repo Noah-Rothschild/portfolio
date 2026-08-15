@@ -36,7 +36,11 @@ export default function ProjectCard({ project, variant = "default" }: ProjectCar
             )}
             {project.liveUrl && (
                 <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-gray-400 hover:text-gray-900 transition-colors duration-200">
-                <img src="/images/website.png" alt="Live Site" className="w-4 h-4" />
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5}>
+                        <circle cx="12" cy="12" r="9" />
+                        <ellipse cx="12" cy="12" rx="4" ry="9" />
+                        <path d="M3 12h18" />
+                    </svg>
                 </a>
             )}
         </div>

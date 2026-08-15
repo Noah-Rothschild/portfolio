@@ -6,7 +6,7 @@ const projects: Project[] = [
         description: "Webapp Project where a user adds ingredients to their personal pantry and is able to have recipes suggested to them based on the contents of their pantry.",
         slug: "chefbook",
         status: "in-progress",
-        techStack: ["Django REST Framework", "React", "PostGreSQL", "Python"],
+        techStack: ["Django REST Framework", "React", "PostGreSQL", "Python", "JWT Auth", "JavaScript"],
         liveUrl: "",
         githubUrl: "https://github.com/Noah-Rothschild/chefbook",
         
@@ -17,7 +17,7 @@ const projects: Project[] = [
         description: "C-2-C E-commerce website built using Javascript, PHP and MySQL that aims to connect South African vendors to customers in a secure marketplace environment.",
         slug: "rising-tide",
         status: "live",
-        techStack: ["PHP", "JavaScript", "MySQL"],
+        techStack: ["PHP", "JavaScript", "MySQL", "HTML", "CSS"],
         liveUrl: "https://rising-tide.freedev.app/",
         githubUrl: "https://github.com/Noah-Rothschild/rising-tide",
         
