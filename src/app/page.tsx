@@ -4,13 +4,21 @@ import ProjectCard from "../components/ProjectCard";
 export default function Home() {
   return (
     <div>
-      <section id="hero" className="hero-section">
-        <div className="hero">
-          <h1>Noah Rothschild</h1>
-          <h2>Software Engineer</h2>
-          <img src="/profile.jpg" alt="Profile Picture" />
-          <p>Building full-stack solutions to real problems.</p>
-        </div>
+      <section id="hero" className="min-h-screen flex flex-col items-center justify-center text-center gap-5 px-10">
+          <h1 className="font-comfortaa text-[clamp(3rem,10vw,9rem)] font-light tracking-tight text-gray-900">Noah Rothschild</h1>
+          <h2 className="font-source-sans text-[clamp(2rem,3vw,3rem)] font-light text-gray-500 tracking-wide">Software Engineer</h2>
+
+          <div className="absolute bottom-12 left-0 right-0 flex items-center justify-center gap-8">
+            <a href="https://github.com/Noah-Rothschild" target="_blank" rel="noopener noreferrer" className="font-comfortaa text-xs uppercase tracking-wider text-gray-700 hover:text-gray-900 transition-colors duration-200"> <img src="/images/github.png" alt="GitHub Icon" className="inline-block w-4 h-4 mr-1" />
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/noah-rothschild-095270202/" target="_blank" rel="noopener noreferrer" className="font-comfortaa text-xs uppercase tracking-wider text-gray-700 hover:text-gray-900 transition-colors duration-200"> <img src="/images/linkedin.png" alt="LinkedIn Icon" className="inline-block w-4 h-4 mr-1" />
+              LinkedIn
+            </a>
+            <a href="mailto:nprothschild@gmail.com" className="font-comfortaa text-xs uppercase tracking-wider text-gray-700 hover:text-gray-900 transition-colors duration-200"> <img src="/images/email.png" alt="Email Icon" className="inline-block w-4 h-4 mr-1" />
+              Email
+            </a>
+          </div>
       </section>
 
       <section id="projects" className="projects">

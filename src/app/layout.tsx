@@ -12,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${comfortaa.variable} ${sourceSans.variable} pt-20`}>
+      <body className={`${comfortaa.variable} ${sourceSans.variable}`}>
         <Nav />
         {children}
       </body>
