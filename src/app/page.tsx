@@ -74,7 +74,7 @@ export default function Home() {
             <p className="font-source-sans text-base text-gray-600 leading-relaxed max-w-md mb-6">
               Hello, I'm Noah Rothschild! I'm a software engineer with a passion for building full-stack solutions. My current experience includes leveraging modern web technologies such as Django, Typescript, React and Next.js to create efficient and scalable web-solutions. I am always looking for new challenges and learning opportunities and am currently developing my cloud architecture knowledge.
               </p>
-              <a href="/noah_rothschild_cv.pdf" download className="font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
+              <a href="/noah_rothschild_cv.pdf" download className="underline font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
                 Download Resume →
               </a>
             </div>
@@ -83,7 +83,7 @@ export default function Home() {
             <div>
               <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-600 block mb-4">TechStack</span>
               <div className="flex flex-wrap gap-2">
-                {["Python", "JavaScript", "Java", "PHP", "TypeScript", "Django", "MySQL", "PostgreSQL", "CSS", "HTML", "AWS", "React"].map((tech) => (
+                {["Python", "JavaScript", "Java", "PHP", "TypeScript", "Next.js", "Django", "MySQL", "PostgreSQL", "CSS", "HTML", "AWS", "React", "Git"].map((tech) => (
                   <span key={tech} className="text-xs uppercase tracking-wider px-2.5 py-1 border border-gray-200 text-gray-500 rounded-full">
                     {tech}
                     </span>
@@ -101,27 +101,52 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <div>
-          <h2>Contact Me</h2>
-          <p>If you have a project that needs help or a role that you think I'd be a good fit for, feel free to reach out!</p>
+      <section id="contact" className="scroll-mt-24 px-6 py-28">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-comfortaa text-4xl font-semibold text-gray-900 text-center mb-12">
+            Contact Me
+          </h2>
+          <p className="font-comfortaa text-xl font-medium text-gray-900 text-center mb-10 max-w-xl mx-auto">
+            If you have a project that needs help or a role that you think I'd be a good fit for, feel free to reach out!
+          </p>
+          <div className="grid md:grid-cols-2 gap-16 mt-16">
+            <div className="flex flex-col text-center md:text-left">
+              <p className="font-comfortaa text-xs uppercase tracking-wider text-gray-600 block mt-6">Location</p>
+              <p className="font-source-sans text-sm text-gray-400 mt-3">
+                Cape Town, South Africa
+              </p>
+            </div>
 
-          <h2>Location</h2>
-          <p>Cape Town, South Africa.</p>
-
-          <h2>Email</h2>
-          <p><a href="mailto:nprothschild@gmail.com">nprothschild@gmail.com</a></p>
-
-          <h2>Social Media</h2>
-          <p><a href="https://www.linkedin.com/in/noah-rothschild-095270202/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-          <p><a href="https://github.com/Noah-Rothschild" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <div className="flex flex-col">
+              <a href="mailto:nprothschild@gmail.com" className="group flex items-baseline gap-4 py-4 border-t border-gray-200 hover:border-gray-900 transition-colors duration-200">
+                <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-400 w-20 shrink-0">Email</span>
+                <span className="font-source-sans text-sm text-gray-600 group-hover:text-gray-900 transition-colors duration-200">nprothschild@gmail.com</span>
+              </a>
+              <a href="https://github.com/Noah-Rothschild" target="_blank" rel="noopener noreferrer" className="group flex items-baseline gap-4 py-4 border-t border-gray-200 hover:border-gray-900 transition-colors duration-200">
+                <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-400 w-20 shrink-0">GitHub</span>
+                <span className="font-source-sans text-sm text-gray-600 group-hover:text-gray-900 transition-colors duration-200">github.com/Noah-Rothschild</span>
+              </a>
+              <a href="https://www.linkedin.com/in/noah-rothschild-095270202/" target="_blank" rel="noopener noreferrer" className="group flex items-baseline gap-4 py-4 border-t border-gray-200 hover:border-gray-900 transition-colors duration-200">
+                <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-400 w-20 shrink-0">LinkedIn</span>
+                <span className="font-source-sans text-sm text-gray-600 group-hover:text-gray-900 transition-colors duration-200">linkedin.com/in/noah-rothschild</span>
+              </a>
+              <div className="border-t border-gray-200"></div>
+            </div>
+          </div>
 
         </div>
       </section>
 
-      <section className="footer">
-        <p>{new Date().getFullYear()} &copy;  Noah Rothschild. All rights reserved.</p>
-      </section>
+      <footer className="px-6 py-10 border-t border-gray-200">
+        <div className="max-w-5xl mx-auto flex md:items-center justify-between gap-4">
+          <span className="font-comfortaa text-base font-semibold text-gray-900">
+             
+          </span>
+          <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-400">
+            Noah Rothschild © 2026
+          </span>
+        </div>
+      </footer>
     
     </div>
   );
