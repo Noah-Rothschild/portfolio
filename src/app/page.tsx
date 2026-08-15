@@ -45,10 +45,9 @@ export default function Home() {
           </div>
       </section>
 
-      <section id="projects" className="projects">
-        <div className="previews">
-          <h2>Selected Projects</h2>
-          <p>Here are some of my recent projects:</p>
+      <section id="projects" className="scroll-mt-24">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-comfortaa text-3xl font-semibold text-gray-900 mb-4">Selected Work</h2>
           <div className="project-previews">
             {projects.map((project) => (
               <ProjectCard key={project.title} project={project} variant="compact" />
@@ -82,6 +81,11 @@ export default function Home() {
 
         </div>
       </section>
+
+      <section className="footer">
+        <p>{new Date().getFullYear()} &copy;  Noah Rothschild. All rights reserved.</p>
+      </section>
+    
     </div>
   );
 }

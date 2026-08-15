@@ -1,4 +1,5 @@
 import { Project } from "../types/project";
+import Link from "next/link";
 
 interface ProjectCardProps {
     project: Project;
@@ -7,28 +8,26 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project, variant = "default" }: ProjectCardProps) {
     return (
-        <div className={`border p-4 rounded shadow-md hover:shadow-lg transition-shadow duration-300 w-full ${variant === "compact" ? "max-w-sm" : "max-w-2xl"} mx-auto bg-white text-gray-900 space-y-3`}>
-            <h3 className="text-xl font-bold">{project.title}</h3>
-            {project.techStack && (
-                <div>
-                    {project.techStack.map((tech) => (
-                        <span key={tech} className="bg-accent/10 text-accent text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-            )}
-            <p className="text-sm text-gray-500">Status: {project.status}</p>
-            <div className="flex gap-4">
-                {project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-                    Live Demo
-                </a>}
-                {project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
-                    GitHub
-                </a>}
+        <Link
+        href={`/projects/${project.slug}`}
+        className="group flex flex-col gap-3 py-8 border-t border-gray-200 hover:bg-gray-50 transition-colors duration-300 -mx-4 px-7">
+        <h3 className="font-comfortaa text-2xl font-semibold text-gray-900 group-hover:text-gray-700 transition-colors duration-200">
+            {project.title}
+        </h3>
+
+        <p className="font-source-sans text-sm text-gray-600 leading-relaxed max-w-3xl">
+            {project.description}
+        </p>
+
+        {project.techStack && (
+            <div className="flex flex-wrap gap-2">
+            {project.techStack.map((tech) => (
+                <span key={tech} className="text-xs uppercase tracking-wider px-2.5 py-1 border bg-gray-100 border-gray-400 text-gray-500 rounded-full">
+                {tech}
+                </span>
+            ))}
             </div>
-            {variant === "default" && <p className="text-sm text-gray-700">{project.description}</p>}
-            
-        </div>
-    );
+        )}
+        </Link>
+  );
 }
