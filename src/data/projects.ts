@@ -35,10 +35,10 @@ const projects: Project[] = [
     },
 
     {
-        title: "tourism-safety-app",
+        title: "cape-safe",
         description: "Location-based system that provides crowd-sourced safety information about Cape Town aimed at increasing tourism safety within the city.",
         slug: "tourism-safety-app",
-        techStack: ["React Native", "Express", "Firebase"],
+        techStack: ["React Native", "Node.js", "Firebase", "Google Maps API", "TypeScript"],
         status: "in-progress",
         liveUrl: "",
         githubUrl: "",
