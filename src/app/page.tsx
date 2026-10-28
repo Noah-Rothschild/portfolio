@@ -72,7 +72,10 @@ export default function Home() {
           <div>
             <h2 className="font-comfortaa text-3xl font-semibold text-gray-900 mb-8">About</h2>
             <p className="font-source-sans text-base text-gray-600 leading-relaxed max-w-md mb-6">
-              Hello, I'm Noah Rothschild! I'm a software engineer with a passion for building full-stack solutions. My current experience includes leveraging modern web technologies such as Django, Typescript, React and Next.js to create efficient and scalable web-solutions. I am always looking for new challenges and learning opportunities and am currently developing my cloud architecture knowledge.
+              Hello, I'm Noah Rothschild! I'm a software engineer with interests ranging from high-level systems architecture to front-end design. I'm confident across the stack from Django and PostgreSQL to React and Next.js, and I'm always learning new tools as I go. My current focus is on developing my cloud infrastructure knowledge.
+              </p>
+              <p className="font-source-sans text-base text-gray-600 leading-relaxed max-w-md mb-6">
+              When I'm not coding, you can find me playing piano, watching Star Wars, or nerding out about lord of the rings.
               </p>
               <a href="/noah_rothschild_cv.pdf" download className="underline font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
                 Download Resume →
