@@ -77,7 +77,7 @@ export default function Home() {
               <p className="font-source-sans text-base text-gray-600 leading-relaxed max-w-md mb-6">
               When I'm not coding, you can find me playing piano, watching Star Wars, or nerding out about lord of the rings.
               </p>
-              <a href="/noah_rothschild_cv.pdf" download className="underline font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
+              <a href="/Noah_Rothschild_resume.pdf" download className="underline font-comfortaa text-sm uppercase tracking-wider text-gray-500 hover:text-gray-900 transition-colors duration-200">
                 Download Resume →
               </a>
             </div>
