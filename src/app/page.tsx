@@ -83,7 +83,7 @@ export default function Home() {
             <div>
               <span className="font-comfortaa text-xs uppercase tracking-wider text-gray-600 block mb-4">TechStack</span>
               <div className="flex flex-wrap gap-2">
-                {["Python", "JavaScript", "Java", "PHP", "TypeScript", "Next.js", "Django", "MySQL", "PostgreSQL", "CSS", "HTML", "AWS", "React", "Git"].map((tech) => (
+                {["Python", "JavaScript", "Java", "PHP", "TypeScript", "Next.js", "Django", "Firebase", "MySQL", "PostgreSQL", "CSS", "HTML", "AWS", "React", "Git"].map((tech) => (
                   <span key={tech} className="text-xs uppercase tracking-wider px-2.5 py-1 border border-gray-200 text-gray-500 rounded-full">
                     {tech}
                     </span>

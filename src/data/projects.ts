@@ -1,13 +1,25 @@
 import { Project } from "../types/project";
 
 const projects: Project[] = [
+
+    {
+        title: "cape-safe",
+        description: "Location-based system that provides crowd-sourced safety information about Cape Town aimed at increasing tourism safety within the city.",
+        slug: "tourism-safety-app",
+        techStack: ["React Native", "Node.js", "Firebase", "Google Maps API", "TypeScript"],
+        status: "in-progress",
+        liveUrl: "",
+        githubUrl: "https://github.com/Cape-Safe/cape-safe",
+        
+    },
+
     {
         title: "chefbook",
         description: "Webapp Project where a user adds ingredients to their personal pantry and is able to have recipes suggested to them based on the contents of their pantry.",
         slug: "chefbook",
-        status: "in-progress",
+        status: "live",
         techStack: ["Django REST Framework", "React", "PostGreSQL", "Python", "JWT Auth", "JavaScript"],
-        liveUrl: "",
+        liveUrl: "https://chefbook-ashen.vercel.app/",
         githubUrl: "https://github.com/Noah-Rothschild/chefbook",
         
     },
