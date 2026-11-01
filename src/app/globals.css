@@ -1,11 +1,44 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-accent: #0D9488;
   --font-comfortaa: var(--font-comfortaa);
   --font-source-sans: var(--font-source-sans);
 }
 
+/* Dark theme: the site only uses white + the gray scale, so inverting those
+   variables re-themes every existing utility without per-element dark: classes. */
+.dark {
+  color-scheme: dark;
+  --color-white: #0e1013;
+  --color-gray-50: #16191e;
+  --color-gray-100: #1d2127;
+  --color-gray-200: #2a2f37;
+  --color-gray-300: #3b414b;
+  --color-gray-400: #757d8a;
+  --color-gray-500: #969dab;
+  --color-gray-600: #b3b9c4;
+  --color-gray-700: #d1d5db;
+  --color-gray-800: #e5e7eb;
+  --color-gray-900: #f3f4f6;
+  --color-gray-950: #f9fafb;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+/* Applied briefly while the theme switches so every colour fades together. */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 400ms ease, border-color 400ms ease, color 400ms ease, fill 400ms ease, stroke 400ms ease !important;
 }

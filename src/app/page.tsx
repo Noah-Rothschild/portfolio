@@ -140,7 +140,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="px-6 py-10 border-t border-gray-200">
+      <footer className="pl-6 pr-20 py-10 border-t border-gray-200">
         <div className="max-w-5xl mx-auto flex md:items-center justify-between gap-4">
           <span className="font-comfortaa text-base font-semibold text-gray-900">
              
